@@ -25,15 +25,15 @@ Add JFrog Pipelines integration to an existing PagerDuty service or create a new
 3. Enter an **Integration Name** in the format `JFrog` and select  ***JFrog Pipelines + PagerDuty Notifications***  from the Integration Type menu.
 4. Click the **Add Integration** button to save your new integration. You will be redirected to the Integrations tab for your service.
 5. An **Integration Key** will be generated on this screen. This key can be stored into JFrog Pipelines as a resource or used directly as the `--routingkey` flag to `send_notification` in the yaml of a JFrog Pipeline.
-![IntegrationKey](images/IntegrationKey.png)
+![IntegrationKey](IntegrationKey.png)
 
 ### Creating a PagerDuty API Token
 An API token is also required for the JFrog Pipelines + Pagerduty Notifications integration. 
 
 1. Click on your avatar in the top right and `My Profile`
-![MyProfile](images/MyProfile.png)
+![MyProfile](MyProfile.png)
 2. Click on the `User Settings` tab and inside the `API Access` section click on `Create API User Token`
-![APIToken](images/APIToken.png)
+![APIToken](APIToken.png)
 3. Save the token we will use this when creating the integration in JFrog Pipelines for PagerDuty.
 
 
@@ -43,7 +43,7 @@ An API token is also required for the JFrog Pipelines + Pagerduty Notifications 
 1. Open your JFrog Platform with Pipelines and click on the `Adminstration gears` in the left menu. Click on the `Pipelines` menu item and then click on the sub-tab `Integrations`.
 2. Click the `+ Add an Integration` link on the top right.
 3. Select `PagerDuty Events` for the integration type
-![AddNewIntegration](images/AddNewIntegration.png)
+![AddNewIntegration](AddNewIntegration.png)
 4. Enter a name for this integration which will be used in the pipeline yaml. ex: `MyPagerDutyIntegration`
 5. Enter the Pagerduty API token created in prior steps.
 6. Click Create
@@ -80,7 +80,7 @@ Commit the pipeline yaml to your SCM provider and then [follow the official step
 1. Click on the JFrog Pipeline tab `My Pipelines`
 2. Select the Pipeline you have synced 
 3. Click on the Pipeline tile and click the `Trigger this step` button
-![PipelinesTrigger](images/PipelineTrigger.png)
+![PipelinesTrigger](PipelineTrigger.png)
 
 Or follow the official steps on all the ways of how to [trigger a JFrog pipelines.](https://www.jfrog.com/confluence/display/JFROG/Triggering+Pipelines+and+Steps)
 
@@ -90,4 +90,4 @@ Or follow the official steps on all the ways of how to [trigger a JFrog pipeline
 3. Navigate to the integration by clicking on the integration name (**JFrog Pipelines + PagerDuty Notifications**)
 4. Click on the **Delete Integration** button on the top right corner
 5. Remove any PagerDuty Pipelines in the `Pipelines Sources` tab of JFrog Pipelines by clicking on `Delete` shown below.
-![PipelinesDelete](images/PipelinesDelete.png)
+![PipelinesDelete](PipelinesDelete.png)
